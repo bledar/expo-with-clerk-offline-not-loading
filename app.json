@@ -1,20 +1,22 @@
 {
-  "expo": {
-    "name": "expo-with-clerk",
-    "slug": "expo-with-clerk",
-    "scheme": "with-clerk",
-    "userInterfaceStyle": "automatic",
-    "orientation": "default",
-    "web": {
-      "output": "server"
-    },
-    "plugins": [
-      [
-        "expo-router",
-        {
-          "unstable_useServerMiddleware": true
-        }
-      ]
-    ]
-  }
+	"expo": {
+		"name": "expo-with-clerk",
+		"slug": "expo-with-clerk",
+		"scheme": "with-clerk",
+		"userInterfaceStyle": "automatic",
+		"orientation": "default",
+		"ios": {
+			"bundleIdentifier": "com.bledar.expowithclerk"
+		},
+		"android": {
+			"package": "com.bledar.expowithclerk"
+		},
+		"web": {
+			"output": "server"
+		},
+		"plugins": [["expo-router"]],
+		"experiments": {
+			"reactCompiler": false
+		}
+	}
 }
